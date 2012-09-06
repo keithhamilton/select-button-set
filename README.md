@@ -13,21 +13,19 @@ This is a small javascript module that is used to convert a select DOM element i
 
   context
   The DOM context on which this will operate. the intended structure for the context is as follows:
-      <div class='select-button-set'>
-        <select class='select-button-set-select'>
-          <option class='select-button-set-option' value='SomeValue'>Option1</option>
-          <option class='select-button-set-option' value='SomeValue'>Option2</option>
-          <option class='select-button-set-option' value='SomeValue'>Option3</option>
-          ...
-          <option class='select-button-set-option' value='SomeValue'>OptionN</option>
-        </select>
-      </div>
+    <div class='select-button-set'>
+      <select class='select-button-set-select'>
+        <option class='select-button-set-option' value='SomeValue'>Option1</option>
+        <option class='select-button-set-option' value='SomeValue'>Option2</option>
+        <option class='select-button-set-option' value='SomeValue'>Option3</option>
+        ...
+        <option class='select-button-set-option' value='SomeValue'>OptionN</option>
+      </select>
+    </div>
   
   The context can be passed in either as a jQuery object, or by using the selector with the appropriate . or # prefix
-  eg: 
-    var mySelectButtonSet = new SelectButtonSet('.select-button-set','#event_target','update_event_target').initialize();
-  is the same as:
-    var mySelectButtonSet = new SelectButtonSet($('.select-button-set'),$('#event_target'),'update_event_target').initialize();
+  eg: '#context' is the same as $('#context')
+  
 
   event_trigger (optional)
   A string that will be the event identifier for the event_target. If no value is passed, a default value of 'select-button-set-changed' will be assigned to the event_trigger
