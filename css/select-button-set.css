@@ -1,0 +1,33 @@
+.select-button-set-button
+{
+	width:auto;
+	height:25px;
+	background:#DDD;
+	cursor: pointer;
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+	margin-right:1px;
+	-moz-transition: background .4s;
+}
+.select-button-set-button:hover
+{
+	background:#FF0;
+}
+
+.select-button-set-button-first
+{
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+.select-button-set-button-last
+{
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.select-button-set-button-selected
+{
+	background:#FF0;
+}
