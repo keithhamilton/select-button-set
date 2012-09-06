@@ -10,7 +10,7 @@ This is a small javascript module that is used to convert a select DOM element i
 ### 1.1 Parameters
 The construction of the object takes three parameters: context, event_trigger, event_target
 
-- context
+### context
 The DOM context on which this will operate. the intended structure for the context is as follows:
 ```html
 <div class='select-button-set'>
