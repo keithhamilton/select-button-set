@@ -22,13 +22,18 @@ This is a small javascript module that is used to convert a select DOM element i
       <option class='select-button-set-option' value='SomeValue'>OptionN</option>
     </select>
   </div>
+  ```
 
   The context can be passed in either as a jQuery object, or by using the selector with the appropriate . or # prefix
-  eg: 
+  eg:
+  ```javascript
     var mySelectButtonSet = new SelectButtonSet('.select-button-set','#event_target','update_event_target').initialize();
+  ```
   is the same as:
+  ```javascript
     var mySelectButtonSet = new SelectButtonSet($('.select-button-set'),$('#event_target'),'update_event_target').initialize();
-
+  ```
+  
   event_trigger (optional)
   A string that will be the event identifier for the event_target. If no value is passed, a default value of 'select-button-set-changed' will be assigned to the event_trigger
 
