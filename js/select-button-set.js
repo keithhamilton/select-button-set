@@ -1,9 +1,9 @@
-var SelectButtonSet = function SelectButtonSet(context, target, event_trigger)
+var SelectButtonSet = function SelectButtonSet(context, event_trigger, event_target)
 {
     var $context = context,
-        $target = target,
-        $buttons,
-        event_trigger = (typeof event_trigger !== 'undefined') ? event_trigger : 'select-button-set-changed';
+     	event_trigger = (typeof event_trigger !== 'undefined') ? event_trigger : 'select-button-set-changed',
+        $target = (typeof event_target !== 'undefined') ? event_target : 'document',
+        $buttons;
 
 	function _initialize()
 	{
