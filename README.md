@@ -27,11 +27,11 @@ The DOM context on which this will operate. the intended structure for the conte
 The context can be passed in either as a jQuery object, or by using the selector with the appropriate . or # prefix
 eg:
 ```javascript
-  var mySelectButtonSet = new SelectButtonSet('.select-button-set','#event_target','update_event_target').initialize();
+  var mySelectButtonSet = new SelectButtonSet('.select-button-set').initialize();
 ```
 is the same as:
 ```javascript
-  var mySelectButtonSet = new SelectButtonSet($('.select-button-set'),$('#event_target'),'update_event_target').initialize();
+  var mySelectButtonSet = new SelectButtonSet($('.select-button-set')).initialize();
 ```
 
 ### event_trigger (optional)
