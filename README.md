@@ -4,24 +4,25 @@
 This is a small javascript module that is used to convert a select DOM element into a radio-style button set.
 
 ##`0. Dependencies`
-  ##0.1 jquery (version 1.8.1 used with initial construction of this module)
+  ###0.1 jquery (version 1.8.1 used with initial construction of this module)
 
 ##`1. Construction`
-  ##1.1 Parameters
+  ###1.1 Parameters
   The construction of the object takes three parameters: context, event_trigger, event_target
 
   context
   The DOM context on which this will operate. the intended structure for the context is as follows:
-      <div class='select-button-set'>
-        <select class='select-button-set-select'>
-          <option class='select-button-set-option' value='SomeValue'>Option1</option>
-          <option class='select-button-set-option' value='SomeValue'>Option2</option>
-          <option class='select-button-set-option' value='SomeValue'>Option3</option>
-          ...
-          <option class='select-button-set-option' value='SomeValue'>OptionN</option>
-        </select>
-      </div>
-  
+  ```html
+  <div class='select-button-set'>
+    <select class='select-button-set-select'>
+      <option class='select-button-set-option' value='SomeValue'>Option1</option>
+      <option class='select-button-set-option' value='SomeValue'>Option2</option>
+      <option class='select-button-set-option' value='SomeValue'>Option3</option>
+      ...
+      <option class='select-button-set-option' value='SomeValue'>OptionN</option>
+    </select>
+  </div>
+
   The context can be passed in either as a jQuery object, or by using the selector with the appropriate . or # prefix
   eg: 
     var mySelectButtonSet = new SelectButtonSet('.select-button-set','#event_target','update_event_target').initialize();
