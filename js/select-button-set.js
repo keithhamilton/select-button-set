@@ -56,8 +56,7 @@ SelectButtonSet.prototype._onButtonClick = function (event) {
 
 
 SelectButtonSet.prototype.addSubscriber = function (subscriber) {
-    var selector,
-        self = this;
+    var selector;
     try {
         selector = subscriber.attr('class')!=null ? '.'+subscriber.attr('class') : '#'+subscriber.attr('id');
         
