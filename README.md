@@ -37,17 +37,18 @@ is the same as:
 ### event_trigger (optional)
 A string that will be the event identifier for the event_target. If no value is passed, a default value of 'select-button-set-changed' will be assigned to the event_trigger
 
-### event_target
-The DOM element that will be reacting to the select-button-set. Like the context parameter, this can be passed by jQuery object or a selector string. 
-If no value is passed, a default value of 'document' will be assigned to the event_target so that the global document is targeted.
-
-##`2. Initialization`
-The module object must be initialized via an initialize method when the object is declared.
-eg:
+##`2. Subscribing`
+To register a subscriber to the button set, use the addSubscriber method, passing in a jQuery object or a selector:
 ```javascript
-  var mySelectButtonSet = new SelectButtonSet('.select-button-set').initialize();
+mySelectButtonSet.addSubscriber('#newSubscriber');
 ```
 
-##`3. Styling`
+##`3. Unsubscribing`
+To unsubscribe an element from the button set, use the removeSubscriber method, passing in a jQuery object or a selector:
+```javascript
+mySelectButtonSet.removeSubscriber('#newSubscriber');
+```
+
+##`4. Styling`
 The style of the elements can be altered in the css file included in the repo
 
