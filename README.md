@@ -1,10 +1,10 @@
 `SelectButtonSet`
 ==
 
-This is a small javascript module that is used to convert a select DOM element into a radio-style button set.
+This is a small javascript prototype object that is used to convert a select DOM element into a radio-style button set.
 
 ##`0. Dependencies`
-### 0.1 jquery (version 1.8.1 used with initial construction of this module)
+jQuery (version 1.8.1 used with initial construction of this object)
 
 ##`1. Construction`
 ### 1.1 Parameters
